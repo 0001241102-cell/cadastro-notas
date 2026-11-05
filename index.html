@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema Escolar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema Escolar</h1>
+        <p>Cadastro e consulta de alunos</p>
+        <p>Teste de Aceitação do Usuário</p>
+    </header>
+
+    <main class="container">
+
+        <h2>Cadastrar aluno</h2>
+
+        <form id="formAluno">
+
+            <label for="nome">Nome do aluno:</label>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite o nome do aluno"
+                required
+            >
+
+            <label for="nota">Nota do aluno:</label>
+
+            <input
+                type="text"
+                id="nota"
+                placeholder="Digite a nota do aluno"
+                required
+            >
+
+            <p id="mensagem"></p>
+
+            <button type="submit" id="btnSalvar">
+                Cadastrar aluno
+            </button>
+
+            <button type="button" id="btnCancelar" hidden>
+                Cancelar edição
+            </button>
+
+        </form>
+
+        <h2>Alunos cadastrados</h2>
+
+        <label for="pesquisa">Pesquisar aluno:</label>
+
+        <input
+            type="search"
+            id="pesquisa"
+            placeholder="Pesquisar pelo nome"
+        >
+
+        <div id="listaAlunos">
+            <p>Nenhum aluno cadastrado.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido por Marina e Isabella</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
